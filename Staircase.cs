@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace HackerRank
 {
-    static class Staircase
+    static class Stair_Case
     {
+        // Sağ tarafa yaslanmış piramit inşa etme.
         // Enumerable.Repeat => Belirtilen string'i istenilen kadar tekrar ederek IEnumerable<string> tipinde bir yapı
         // döndürüyor.
         // String.Concat => String birleştirmek için kullanılır. Overload metotlarından birisi de IEnumerable<string> tipindeki
         // yapının içerisinde bulunan stringleri birleştiriyor.
         
-        public static void staircase(int n)
+        public static void Staircase(int n)
         {
             
             for (int i = 1; i <= n; i++)

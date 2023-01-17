@@ -10,6 +10,13 @@ namespace HackerRank
     {
         public static void miniMaxSum(List<int> arr)
         {
+            /*
+             * Tam sayılardan oluşan bir listemiz var. En büyük sayı ve en küçük sayı gözardı edilerek 2 sefer (büyük ve küçük için ayrı ayrı)
+             * listenin elemanları toplanacak.
+             * Ekrana "enKücükHaricToplam enBüyükHariçToplam" şeklinde yazdırılacak.
+             * Listenin elemanları 0'dan büyük, 10^9 dan küçük veya eşit olacak.
+             */
+
             // Birinci elemandan 1 tane bile farklı sayı bulursa liste farklı sayılardan oluşuyor demektir.
             if (arr.Any(n => n != arr[0]))
             {
@@ -25,14 +32,12 @@ namespace HackerRank
                     {
                         tempSumMax += n;
                     }
-                }
-                foreach (int n in arr)
-                {
                     if (n != min)
                     {
                         tempSumMin += n;
                     }
                 }
+                
 
                 Console.Write(tempSumMax + " " + tempSumMin);
             }
